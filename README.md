@@ -2,6 +2,11 @@
 
 **wpget** is a Python script that downloads a set of pages from Wikipedia into a local sqlite database.
 
+ToDos:
+
+* design db schema
+* set up sqlite database 
+
 Usage:
 
 ```bash

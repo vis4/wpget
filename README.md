@@ -6,8 +6,8 @@ Usage:
 
 ```bash
 # retrieve all pages in a category and their sub categories
-wpget --recursive Category:Media_companies_of_Germany
+$ wpget --recursive Category:Media_companies_of_Germany
 # retrieve a page from the German wikipedia
-wpget --lang=de "Axel Springer AG"
+$ wpget --lang=de "Axel Springer AG"
 ```
 

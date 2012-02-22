@@ -3,3 +3,4 @@ wpget_content
 wpget.egg-info/
 dist/
 *.db
+test/

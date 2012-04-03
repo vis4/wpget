@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>wpget by gka</title>
+    
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>wpget</h1>
+        <p>Downloads a set of pages from Wikipedia into a local sqlite database.</p>
+        <p class="view"><a href="https://github.com/gka/wpget">View the Project on GitHub <small>gka/wpget</small></a></p>
+        <ul>
+          <li><a href="https://github.com/gka/wpget/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/gka/wpget/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/gka/wpget">Fork On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h3>Welcome to GitHub Pages.</h3>
+
+<p><strong>wpget</strong> is a tiny Python script that (recursively) downloads a set of pages from Wikipedia into a local sqlite database. Its purpose is to quickly create a local subset of WP articles for further data mining/processing.</p>
+
+<pre><code>$ wpget --recursive Category:Media_companies_of_Germany
+$ wpget --lang=de "Axel Springer AG"
+</code></pre>
+
+<h3>Usage</h3>
+
+<p>Here's the full usage help text:</p>
+
+<pre><code>usage: wpget [-h] [--recursive] [--lang LANG] [--version] [--database FILE]
+             [--content-dir PATH]
+             TARGET
+
+retreives a reasonable set of wikipedia pages. limited to 500 pages per
+category.
+
+positional arguments:
+  TARGET                name of page or category, eg"Barack Obama"
+                        or"Category:Presidents_of_the_United_States"
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --recursive, -r       if a category url is given, wpget will also process
+                        sub-categories recursivly
+  --lang LANG, -l LANG  retreive pages from different locales than"en"
+  --version             show program's version number and exit
+  --database FILE, -d FILE
+                        specifies which database wpget should write to
+                        (defaults to wpget.db)
+  --content-dir PATH, -c PATH
+                        specifies the path where wpget should store page
+                        contents (one file per page). otherwise content will
+                        be stored in sqlite database
+</code></pre>
+
+<h3>Authors and Contributors</h3>
+
+<p>wpget was written by Gregor Aisch (<a href="/gka" class="user-mention">@gka</a>).</p>
+
+<h3>Support or Contact</h3>
+
+<p>Please submit <a href="https://github.com/gka/wpget/issues">new issues at Github</a>.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/gka">gka</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+  </body>
+</html>
